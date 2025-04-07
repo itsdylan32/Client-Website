@@ -24,7 +24,7 @@ const Contact = () => {
           />
           <textarea
             placeholder="Message"
-            className="w-full px-4 py-2 border rounded h-32 resize-none"
+            className="w-full px-3 py-1 border rounded h-30 resize-none"
           />
           <button
             type="submit"
