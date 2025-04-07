@@ -1,13 +1,21 @@
-import Navbar from './components/Navbar';
+import React from 'react';
+import Navbar from './components/Navbar.jsx';
+import Hero from './components/Hero.jsx';
+import About from './components/About.jsx';
+import Contact from './components/Contact.jsx';
+import Projects from './components/Projects.jsx';
 
 function App() {
   return (
-    <div>
+    <>
       <Navbar />
-      <div className="p-10">
-        <h1 className="text-4xl text-blue-600 font-bold">Hello World 🌎</h1>
-      </div>
-    </div>
+      <main className="pt-20">
+        <Hero />
+        <About />
+        <Projects />
+        <Contact />
+      </main>
+    </>
   );
 }
 
