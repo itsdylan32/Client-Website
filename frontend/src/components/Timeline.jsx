@@ -2,16 +2,16 @@ import React, { useState } from 'react';
 
 const timelineItems = [
   {
-    year: '2015 - 2020',
+    year: '2020 - 2023',
+    title: 'USAF National Ceremonial Guardsman and Head Trainer',
+    description:
+      'Trained and led a team of 20+ in ceremonial duties. Performed at high-profile events at the White House and Pentagon, exhibiting precision and professionalism for Presidential and Multinational audiences.',
+  },
+  {
+    year: '2023 - 2025',
     title: 'US Air Force – F-16 Aircraft Mechanic & Supervisor',
     description:
       'Led maintenance operations on F-16 fighter jets. Managed teams and upheld safety standards under mission-critical pressure.',
-  },
-  {
-    year: '2018 - 2019',
-    title: 'USAF National Honor Guard – Presidential Missions',
-    description:
-      'Performed ceremonial honors at the White House and Arlington with precision and professionalism under elite selection.',
   },
   {
     year: '2021 - Present',
@@ -21,7 +21,7 @@ const timelineItems = [
   },
   {
     year: '2023 - Present',
-    title: 'Full-Stack Developer',
+    title: 'Amateur Full-Stack Developer',
     description:
       'Building responsive web apps using React, Node.js, Tailwind CSS, and Firebase with a focus on scalability and clean UI.',
   },
