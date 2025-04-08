@@ -1,6 +1,6 @@
+import { AnimatePresence, motion } from 'framer-motion';
 import React, { useState } from 'react';
 import ProjectCard from './ProjectCard';
-import { motion, AnimatePresence } from 'framer-motion';
 
 const projects = [
   {
@@ -27,7 +27,7 @@ const Projects = () => {
 
   return (
     <section id="projects" className="bg-gray-100 py-20 px-6">
-      <div className="max-w-6xl mx-auto text-center">
+      <div className="centered-form max-w-4xl mx-auto text-center">
         <h2 className="text-4xl font-bold mb-6">Projects</h2>
         <button
           onClick={toggleProjects}

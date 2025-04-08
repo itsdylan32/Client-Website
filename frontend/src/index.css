@@ -25,6 +25,14 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
+  background-color: #fdf6e3;
+  color: #111;
+}
+
+/* Dark mode override */
+html.dark body {
+  background-color: #121212;
+  color: #fdf6e3;
 }
 
 /* Heading */
@@ -58,3 +66,39 @@ button:focus-visible {
 }
 
 /* 🔥 Removed `color-scheme` and media query that conflicts with Tailwind dark mode */
+
+/* 🧩 Center all input text + buttons on the screen */
+.centered-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 20vh;
+  text-align: center;
+  padding: 1.5rem;
+  gap: 1rem;
+}
+
+.centered-form input,
+.centered-form textarea {
+  text-align: center;
+  padding: 0.5rem;
+  width: 70%;
+  max-width: 100px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.centered-form button {
+  padding: 0.6em 1.0em;
+  font-weight: 500;
+  background-color: #646cff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.centered-form button:hover {
+  background-color: #535bf2;
+}

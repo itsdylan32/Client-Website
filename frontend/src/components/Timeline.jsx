@@ -1,5 +1,5 @@
+import { AnimatePresence, motion } from 'framer-motion';
 import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
 
 const timelineItems = [
   {
@@ -34,7 +34,7 @@ const Timeline = () => {
 
   return (
     <section id="timeline" className="bg-white py-20 text-gray-800 flex justify-center items-center">
-      <div className="w-full max-w-6xl mx-auto px-6 text-center">
+      <div className="centered-form max-w-4xl mx-auto px-6">
         <h2 className="text-4xl font-bold mb-8">Career Timeline</h2>
 
         <button
@@ -44,20 +44,29 @@ const Timeline = () => {
           {isOpen ? 'Hide Timeline' : 'Show Timeline'}
         </button>
 
-        {isOpen && (
-          <div className="mt-6 text-left max-w-2xl mx-auto">
-            <div className="relative border-l-4 border-indigo-600 pl-6 space-y-10">
-              {timelineItems.map((item, index) => (
-                <div key={index} className="relative">
-                  <div className="absolute -left-3.5 top-1 w-7 h-7 bg-indigo-600 rounded-full border-4 border-white" />
-                  <h3 className="text-xl font-semibold">{item.title}</h3>
-                  <span className="text-sm text-gray-500 mb-1 block">{item.year}</span>
-                  <p className="text-gray-700 text-sm">{item.description}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        )}
+        <AnimatePresence>
+          {isOpen && (
+            <motion.div
+              key="timeline"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -20 }}
+              transition={{ duration: 0.4 }}
+              className="mt-6 text-left max-w-2xl mx-auto"
+            >
+              <div className="relative border-l-4 border-indigo-600 pl-6 space-y-10">
+                {timelineItems.map((item, index) => (
+                  <div key={index} className="relative">
+                    <div className="absolute -left-3.5 top-1 w-7 h-7 bg-indigo-600 rounded-full border-4 border-white" />
+                    <h3 className="text-xl font-semibold">{item.title}</h3>
+                    <span className="text-sm text-gray-500 mb-1 block">{item.year}</span>
+                    <p className="text-gray-700 text-sm">{item.description}</p>
+                  </div>
+                ))}
+              </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
       </div>
     </section>
   );

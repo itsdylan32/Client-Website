@@ -6,7 +6,7 @@ const Skills = () => {
       id="skills"
       className="bg-gray-100 text-gray-800 py-20 flex justify-center items-center"
     >
-      <div className="w-full max-w-6xl mx-auto px-6 text-center">
+      <div className="centered-form max-w-4xl mx-auto px-6">
         <h2 className="text-4xl font-bold mb-12">Skills & Experience</h2>
 
         {/* Tech Skills */}

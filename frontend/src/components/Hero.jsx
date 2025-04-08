@@ -15,7 +15,7 @@ const Hero = () => {
         <ThemeToggle />
       </div>
 
-      <div className="w-full max-w-6xl mx-auto px-6 text-center">
+      <div className="centered-form">
         <h1 className="text-5xl font-extrabold mb-4">Hey, I'm Dylan 👋</h1>
         <p className="text-lg mb-8">
           Full-stack developer with a passion for building elegant, scalable web apps.

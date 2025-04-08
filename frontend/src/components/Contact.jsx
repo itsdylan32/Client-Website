@@ -6,7 +6,7 @@ const Contact = () => {
       id="contact"
       className="h-screen bg-white text-gray-800 flex justify-center items-center text-center"
     >
-      <div className="w-full max-w-6xl mx-auto px-6">
+      <div className="centered-form max-w-4xl mx-auto px-6">
         <h2 className="text-4xl font-bold mb-6">Get in Touch</h2>
         <p className="text-lg mb-8">
           Fill out the form below and I’ll get back to you as soon as possible.
