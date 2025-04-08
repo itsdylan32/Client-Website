@@ -2,6 +2,7 @@ import React from 'react';
 
 const About = () => {
   return (
+    <div>
     <section
       id="about"
       className="h-screen bg-gray-100 text-gray-800 flex justify-center items-center text-center"
@@ -16,7 +17,8 @@ const About = () => {
         </p>
       </div>
     </section>
+    </div>
   );
 };
 
-export default About;
+export default React.memo(About);
