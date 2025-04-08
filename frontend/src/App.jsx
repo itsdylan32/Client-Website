@@ -10,7 +10,7 @@ import Timeline from './components/Timeline';
 
 function App() {
   return (
-    <div className="min-h-screen bg-[#fdf6e3] text-black dark:bg-[#121212] dark:text-[#fdf6e3] transition-colors duration-500">
+    <div className="min-h-screen bg-[#fdf6e3] text-black dark:bg-[#121212] dark:text-[#fdf6e3] transition-colors duration-20000">
       {/* Dark mode test block */}
       <div className="p-6 rounded-lg shadow-lg text-center">
         <h2 className="text-xl font-bold">Dark mode test block </h2>

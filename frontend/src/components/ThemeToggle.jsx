@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { FaSun, FaMoon } from 'react-icons/fa';
+import { FaMoon, FaSun } from 'react-icons/fa';
 
 const ThemeToggle = () => {
   const [darkMode, setDarkMode] = useState(() => {
@@ -23,7 +23,7 @@ const ThemeToggle = () => {
   return (
     <button
       onClick={() => setDarkMode(!darkMode)}
-      className="text-xl p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition"
+      className="text-xl p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition duration-300"
       aria-label="Toggle Dark Mode"
     >
       {darkMode ? <FaSun className="text-yellow-400" /> : <FaMoon />}
