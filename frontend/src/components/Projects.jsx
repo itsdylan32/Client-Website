@@ -21,7 +21,7 @@ const projects = [
 ];
 
 const Projects = () => {
-  const [showProjects, setShowProjects] = useState(true);
+  const [showProjects, setShowProjects] = useState(false);
 
   const toggleProjects = () => setShowProjects((prev) => !prev);
 

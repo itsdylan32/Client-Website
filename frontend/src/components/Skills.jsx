@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 
 const Skills = () => {
-  const [showSkills, setShowSkills] = useState(true);
+  const [showSkills, setShowSkills] = useState(fasle);
 
   const toggleSkills = () => setShowSkills((prev) => !prev);
 
