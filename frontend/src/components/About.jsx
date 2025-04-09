@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 
 const About = () => {
-  const [showAbout, setShowAbout] = useState(false);
+  const [showAbout, setShowAbout] = useState(false); // ⬅️ Closed by default
 
   const toggleAbout = () => setShowAbout((prev) => !prev);
 
