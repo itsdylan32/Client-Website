@@ -14,14 +14,14 @@ const Contact = () => {
         <form
           action="https://formspree.io/f/xdkepyqb"
           method="POST"
-          className="space-y-4"
+          className="space-y-4 w-full max-w-md mx-auto"
         >
           <input
             type="text"
             name="name"
             placeholder="Name"
             required
-            className="w-full px-4 py-2 border rounded"
+            className="w-full px-4 py-2 border rounded text-center"
           />
 
           <input
@@ -29,14 +29,15 @@ const Contact = () => {
             name="email"
             placeholder="Email"
             required
-            className="w-full px-4 py-2 border rounded"
+            className="w-full px-4 py-2 border rounded text-center"
           />
 
           <textarea
             name="message"
             placeholder="Message"
             required
-            className="w-full px-3 py-1 border rounded h-30 resize-none"
+            rows="4"
+            className="w-full px-4 py-2 border rounded text-center resize-none"
           />
 
           <button

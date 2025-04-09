@@ -21,7 +21,7 @@ const projects = [
 ];
 
 const Projects = () => {
-  const [showProjects, setShowProjects] = useState(true);
+  const [showProjects, setShowProjects] = useState(false); // 🔽 Default to hidden
 
   const toggleProjects = () => setShowProjects((prev) => !prev);
 
@@ -29,6 +29,7 @@ const Projects = () => {
     <section id="projects" className="bg-gray-100 py-20 px-6">
       <div className="centered-form max-w-4xl mx-auto text-center">
         <h2 className="text-4xl font-bold mb-6">Projects</h2>
+
         <button
           onClick={toggleProjects}
           className="mb-8 px-4 py-2 bg-indigo-600 text-white rounded hover:bg-indigo-700 transition"
